@@ -1,16 +1,19 @@
 
 # Monte um algoritmo que receba dois números, realize a subtração entre eles e retorne o valor absoluto (positivo) da operação:
 
-num1 = float(input('Digite o primeiro número: '))                               # Recebe o primeiro número e converte para float
-num2 = float(input('Digite o segundo número: '))                                # Recebe o segundo número e converte para float
+# Recebe inputs do usuário e converte para float
+num1 = float(input('Digite o primeiro número: '))
+num2 = float(input('Digite o segundo número: '))
 
-resultado = num1 - num2                                                         # Realiza a subtração
+# Realiza a subtração
+resultado = num1 - num2
 
-
-if resultado < 0:                                                               # Lógica do valor absoluto: se o resultado for negativo, inverte o sinal
+# Lógica do valor absoluto: se o resultado for negativo, inverte o sinal
+if resultado < 0:
     resultado = resultado * -1
 
-print(f'O valor absoluto da subtração entre {num1} e {num2} é: {resultado}')    # Printa o resultado final
+# Printa o resultado final
+print(f'O valor absoluto da subtração entre {num1} e {num2} é: {resultado}')
 
 '''
 Observação:

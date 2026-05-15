@@ -1,15 +1,17 @@
 
 # Monte um algoritmo que receba dois números decimais, e dívida o maior número pelo menor número:
 
-num1 = float(input("Digite o primeiro número decimal: "))                            # Recebe o primeiro número
-num2 = float(input("Digite o segundo número decimal: "))                             # Recebe o segundo número
+# Recebe inputs do usuário
+num1 = float(input("Digite o primeiro número decimal: "))
+num2 = float(input("Digite o segundo número decimal: "))
 
-if num1 > num2:                                                                      # Testa primeira condição
-    resultado = num1 / num2                                                          # Faz o cálculo e guarda na variável
+# Testa condições e realiza a divisão
+if num1 > num2:                                                                      
+    resultado = num1 / num2
 else:
-    resultado = num2 / num1                                                          # Testa a segunda condição
+    resultado = num2 / num1
 
-print(f'O resultado da divisão do maior número pelo menor número é {resultado}')     # Printa o cálculo final
+print(f'O resultado da divisão do maior número pelo menor número é {resultado}')
 
 '''
 Observação:

@@ -1,23 +1,27 @@
 
 # Monte um algoritmo que receba dois números decimais, e imprima o menor múltiplo comum entre eles:
 
-num1 = int(input('Digite o primeiro número: '))                                         # Recebe o primeiro número e converte para inteiro
-num2 = int(input('Digite o segundo número: '))                                          # Recebe o segundo número e converte para inteiro
+# Recebe inputs do usuário e converte para inteiro
+num1 = int(input('Digite o primeiro número: '))
+num2 = int(input('Digite o segundo número: '))
 
-if num1 > num2:                                                                         # __
-    maior = num1                                                                        #|
-    menor = num2                                                                        #|   Bloco para identificar o maior e o menor número, 
-else:                                                                                   #|   para facilitar a lógica do cálculo do MMC!
-    maior = num2                                                                        #|
-    menor = num1                                                                        #|__
+# Bloco para identificar o maior e o menor número
+if num1 > num2:
+    maior = num1
+    menor = num2
+else:
+    maior = num2
+    menor = num1
 
-multiplo_comum = maior                                                                  # Começa a testar o múltiplo comum a partir do maior número
+# Começa a testar o múltiplo comum a partir do maior número
+multiplo_comum = maior                                                                  
 
-while True:                                                                             # Loop infinito para encontrar o múltiplo comum
-    if multiplo_comum % menor == 0:                                                     # Verifica se o valor atual é divisível pelo menor número
+# Loop para encontrar o múltiplo comum e incremente o pelo maior número para testar o próximo múltiplo
+while True:                                                                             
+    if multiplo_comum % menor == 0:
         print(f'O menor múltiplo comum entre {num1} e {num2} é: {multiplo_comum}')
-        break                                                                           # Encerra o loop ao encontrar o MMC    
-    multiplo_comum += maior                                                             # Incrementa o múltiplo comum pelo maior número para testar o próximo múltiplo
+        break
+    multiplo_comum += maior
 
 '''
 Observação: 
